@@ -22,6 +22,7 @@ public class TestZKClient {
                 System.out.println(event.getPath());
                 System.out.println(event.toString());
                 System.out.println("测试git");
+                System.out.println("第二次提交");
             }
         });
         //存咋的节点不可以再创建
