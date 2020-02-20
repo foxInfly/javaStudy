@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @author : lipu
  * @since : 2020-02-18 21:33
  */
-public class ArrayQueueDemo02 {
+public class CircleQueueDemo01 {
     public static void main(String[] args) {
         //1.创建一个队列
         CircleQueue arrayQueue = new CircleQueue(4);
