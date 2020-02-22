@@ -9,20 +9,20 @@ import java.util.Arrays;
 public class QuickSort {
     public static void main(String[] args) {
 //        int arr[] = {-9,78,0,23,-567,70};
-        int arr[] = new int[800000];
+        int arr[] = new int[8000000];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int)(Math.random()*8000000);//[0-8000000)的数
         }
-        System.out.println("排序前的结果为："+ Arrays.toString(arr));
+//        System.out.println("排序前的结果为："+ Arrays.toString(arr));
         long start = System.currentTimeMillis();
         quickSort(arr, 0, arr.length-1);
         long time = System.currentTimeMillis() - start;
         if (time>=10000) {
-            System.out.println("冒泡排序耗时："+(time/1000)+"秒");
+            System.out.println("快速排序耗时："+(time/1000)+"秒");
         }else {
-            System.out.println("冒泡排序耗时："+time+"毫秒");
+            System.out.println("快速排序耗时："+time+"毫秒");
         }
-        System.out.println("排序后的结果为："+Arrays.toString(arr));
+//        System.out.println("排序后的结果为："+Arrays.toString(arr));
     }
 
     /**快速排序，从小到大
