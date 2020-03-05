@@ -23,8 +23,17 @@
     -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <!--%date{HH:mm:ss.SSS} %c -->
-            <pattern>%date{HH:mm:ss.SSS} %c [%t] - %m%n</pattern>
+            <!--%date{HH:mm:ss.SSS}
+                %d{pattern}、%date{pattern}、%d{pattern,timezone}、%date{pattern,timezone}：输出日志事件的时间;{pattern}为可选项，用于声明时间的格式，比如%d{yyyy-MM-dd HH:mm:ss}，pattern必须为
+                %C{length}、%class{length}：输出发生日志事件的调用类的全限定名
+                %c 是日志的topic名
+                %L、%line：输出发生日志请求的源文件行号，产生行号信息不是非常的快速，有一定的性能损耗，除非对执行速度不敏感否则应该避免使用此选项。（默认异常栈中会输出行号）
+                %t、%thread：输出产生日志事件的线程名称。
+                %m、%msg、%message：在日志中输出应用提供的message。
+                    比如：LOGGER.error("message",exception)，输出“message”和exception栈。
+                %p、%le、%level：输出日志事件的level。
+            -->
+            <pattern>%d | %p |%C{30} | %L [%t] => %m%n</pattern>
         </encoder>
     </appender>
 

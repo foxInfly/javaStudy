@@ -10,7 +10,7 @@ import java.io.IOException;
  * @author : lipu
  * @since : 2020-03-05 12:10
  */
-@Slf4j(topic = "pupu")
+@Slf4j(topic = "c.FileReader")
 public class FileReader {
 
     /** 根据文件名读取文件
