@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+}
+
+plugins {
+    id 'war'
+}
+
+group 'com.pupu'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+/*指定所使用的的残酷
+*   mavenLocal():表示从本地仓库找jar包
+*   mavenCentral()：表示使用中央仓库；此刻该项目中所有的jar包都会默认从中央仓库下载到本地仓库
+*       默认的本地仓库位置是：C:\Users\Administrator\.gradle
+* 如下配置：表示先从本地下载jar,没有去阿里云仓库，再没有才去中央仓库
+*/
+repositories {
+    mavenLocal()
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+    mavenCentral()
+}
+
+/*gradle工程所有的jar包的坐标都在dependencies属性内，每个jar包有三个基本元素
+*   group,name,version
+*   testCompile:表示该jar包在测试的时候起作用
+*   providedCompile:表示只在编译期间起作用，运行期间不起作用
+* 
+*/
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+    compile group: 'org.springframework', name: 'spring-context', version: '5.0.2.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version: '5.0.2.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '5.0.2.RELEASE'
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.0.1'
+    providedCompile group: 'javax.servlet', name: 'jsp-api', version: '2.0'
+}
