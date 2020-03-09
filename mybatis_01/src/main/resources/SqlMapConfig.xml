@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 配置环境,起个名字，为了区分多数据源 -->
+    <environments default="mysql_01">
+        <!-- 配置mysql环境-->
+        <environment id="mysql_01">
+            <!-- 配置事务的类型 -->
+            <transactionManager type="JDBC"></transactionManager>
+            <!-- 配置数据源（连接池） -->
+            <dataSource type="POOLED">
+                <!-- 配置数据库连接的四个基本信息 -->
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://192.168.3.52:3307/mybatis01"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 指定映射配置文件的位置，映射配置文件指的是每个dao独立的配置文件 -->
+    <mappers>
+        <!-- 指定映射配置文件mapper的位置;注意，dao和mapper.xml要在一个目录结构下 -->
+        <mapper resource="com/pupu/dao/UserMapper.xml"/>
+    </mappers>
+
+
+
+</configuration>
