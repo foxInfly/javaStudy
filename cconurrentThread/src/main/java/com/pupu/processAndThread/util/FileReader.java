@@ -13,7 +13,7 @@ import java.io.IOException;
 @Slf4j(topic = "c.FileReader")
 public class FileReader {
 
-    /** 根据文件名读取文件
+    /** 文件全路径读取文件
      * @author lipu
      * @since  2020/3/5 12:24
      * @param  filePath 文件名

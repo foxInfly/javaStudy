@@ -1,6 +1,7 @@
 package com.pupu.fdfs;
 
 import com.github.tobato.fastdfs.domain.StorePath;
+import com.github.tobato.fastdfs.service.DefaultFastFileStorageClient;
 import com.github.tobato.fastdfs.service.FastFileStorageClient;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,14 +23,15 @@ public class FdfsApplicationTests {
 
     //注入fdfs客户端实体类，文件操作接口封装，
     @Autowired
-    private FastFileStorageClient client;
+    private DefaultFastFileStorageClient client;
 
     @Test
     public void fileUpload() throws Exception{
-        File file = new File("F:\\data\\fdfs测试图片\\1.png");
+        File file = new File("F:\\data\\fdfs测试图片\\center.jpg.png");
         String fileName = file.getName();
         FileInputStream inputStream = new FileInputStream(file);
         StorePath storePath = client.uploadFile(inputStream, file.length(), fileName.substring(fileName.lastIndexOf(".") + 1), null);
+//        client.deleteFile("group1/M00/00/00/wKgDMl5Ga7CAOl3xAADXEbyzVo4526_big.png");
         System.out.println("storePath.getPath():"+storePath.getPath());
         System.out.println("storePath.getFullPath():"+storePath.getFullPath());
         System.out.println("storePath.getGroup():"+storePath.getGroup());

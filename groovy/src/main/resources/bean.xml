@@ -9,7 +9,7 @@
     http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <!-- 定义一个Bean -->
-    <bean id="accountDao" class="com.pupu.dao.impl.AccountDaoImpl">
+    <bean id="accountDao" class="com.com.pupu.dao.impl.AccountDaoImpl">
     </bean>
 
 </beans>

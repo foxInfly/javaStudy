@@ -4,9 +4,39 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- dao的全限定类名 -->
-<mapper namespace="com.pupu.com.pupu.dao.UserDao">
-    <select id="findAll" resultType="com.pupu.domain.User">
-        <!-- mysql表名区分大小写 -->
+<mapper namespace="com.com.pupu.dao.UserDao">
+    <!-- mysql表名区分大小写 -->
+    <select id="findAll" resultType="com.com.pupu.domain.User">
         select * from USER
     </select>
+
+    <insert id="saveUser" parameterType="com.com.pupu.domain.User">
+        <!-- 配置插入操作后，获取插入数据的id
+           keyProperty:实体类的id;keyColumn:数据库的字段;order:什么时候执行
+         -->
+      <selectKey keyProperty="id" keyColumn="id" resultType="int" order="AFTER">
+          select last_insert_id();
+      </selectKey>
+      insert into USER(username,address,sex,birthday)
+      values(#{username},#{address},#{sex},#{birthday})
+    </insert>
+
+    <update id="deleteUser" parameterType="int">
+        <!-- 只有一个入参，占位符可以随便写 -->
+      delete from USER where id = #{id}
+    </update>
+
+    <select id="findUserById" parameterType="INT" resultType="com.com.pupu.domain.User">
+        select * from USER where id = #{id}
+    </select>
+
+    <select id="findUserLikeName" parameterType="string" resultType="com.com.pupu.domain.User">
+        <!--select * from USER where username like #{id}-->
+        select * from USER where username like "%${value}%"<!--很少用这种-->
+    </select>
+
+    <select id="findUserCount"  resultType="int">
+        select count(id) from USER
+    </select>
+
 </mapper>

@@ -1,4 +1,4 @@
-package com.pupu.processAndThread;
+package com.pupu.processAndThread.n2;
 
 
 import com.pupu.constant.Constants;

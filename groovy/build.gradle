@@ -6,7 +6,7 @@ plugins {
     id 'war'
 }
 
-group 'com.pupu'
+group 'com.com.pupu'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8

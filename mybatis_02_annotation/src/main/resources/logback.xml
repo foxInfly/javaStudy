@@ -6,7 +6,7 @@
         https://raw.githubusercontent.com/enricopulatzo/logback-XSD/master/src/main/xsd/logback.xsd">
 
     <!--每个logger都关联到logger上下文，默认上下文名称为“default”。但可以使用contextName标签设置成其他名字，用于区分不同应用程序的记录-->
-    <contextName>pupu</contextName>
+    <contextName>com.pupu</contextName>
 
     <!-- 指定日志的输出地址；目的地可以是控制台、文件、远程套接字服务器、 MySQL、PostreSQL、 Oracle和其他数据库、 JMS和远程UNIX Syslog守护进程等
          有两个必要属性name和class。name指定appender名称，class指定appender的全限定名

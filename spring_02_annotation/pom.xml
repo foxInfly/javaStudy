@@ -20,6 +20,14 @@
             <version>5.0.2.RELEASE</version>
         </dependency>
 
+
+        <!-- spring事务-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>5.0.2.RELEASE</version>
+        </dependency>
+
         <!-- spring整合Junit -->
         <dependency>
             <groupId>org.springframework</groupId>

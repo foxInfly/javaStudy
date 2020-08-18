@@ -15,9 +15,9 @@
     <typeAliases>
             <!-- typeAlias用于配置别名。type属性指定的是实体类全限定类名。
             lias属性指定别名， 当指定了别名就不再区分大小写-->
-            <typeAlias type="com.pupu.domain.User" alias="user"/>
+            <typeAlias type="com.com.pupu.domain.User" alias="user"/>
         <!-- 指定配置别名的包，其包下实体类都会注册别名，并且类名就是别名，不再区分大小写-->
-        <package name="com.pupu.domain"/>
+        <package name="com.com.pupu.domain"/>
     </typeAliases>
 
     <!-- 配置环境,起个名字，为了区分多数据源 -->
@@ -40,7 +40,7 @@
     <!-- 指定映射配置文件的位置，映射配置文件指的是每个dao独立的配置文件 -->
     <mappers>
         <!-- 指定映射配置文件mapper的位置;注意，dao和mapper.xml要在一个目录结构下 -->
-        <mapper resource="com/pupu/dao/UserMapper.xml"/>
+        <mapper resource="com/com.pupu/dao/UserMapper.xml"/>
     </mappers>
 
 

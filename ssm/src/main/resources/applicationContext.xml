@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/mvc
+            http://www.springframework.org/schema/mvc/spring-mvc.xsd
+            http://www.springframework.org/schema/aop
+            http://www.springframework.org/schema/aop/spring-aop.xsd
+            http://www.springframework.org/schema/tx
+            http://www.springframework.org/schema/tx/spring-tx.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 开启注解扫描 spring只处理service和dao；controller交给springmvc -->
+    <context:component-scan base-package="com.pupu">
+        <!-- 配置哪些注解不扫描,比如@Controller -->
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+
+
+    <!-- spring整合Mybatis -->
+    <!-- 配置连接池(c3p0) -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://192.168.111.128:3306/javaStudy01"/>
+        <property name="user" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+
+    <!-- 配置SQLSessionFactory工厂，目的获取session再获取代理，然后存到容器中-->
+    <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- 配置Dao接口所在包，哪些接口要生成的代理-->
+    <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.com.pupu.dao"/>
+    </bean>
+
+</beans>

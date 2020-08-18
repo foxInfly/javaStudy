@@ -24,14 +24,14 @@
      -->
     <!--<mappers>-->
         <!--&lt;!&ndash; 指定映射配置文件mapper的位置;注意，dao和mapper.xml要在一个目录结构下 &ndash;&gt;-->
-        <!--<mapper resource="com/pupu/dao/UserMapper.xml"/>-->
+        <!--<mapper resource="com/com.pupu/dao/UserMapper.xml"/>-->
     <!--</mappers>-->
 
     <!-- 指定映射配置文件的位置，映射配置文件指的是每个dao独立的配置文件
        如果注解配置，此处应用class属性
     -->
     <mappers>
-        <mapper class="com.pupu.dao.UserDao"/>
+        <mapper class="com.com.pupu.dao.UserDao"/>
     </mappers>
 
 

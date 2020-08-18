@@ -1,0 +1,3 @@
+rootProject.name = 'groovy'
+includeFlat 'gradle_parent'
+
