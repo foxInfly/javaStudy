@@ -69,7 +69,7 @@ class BinaryTree{
 
 }
 
-//heroNode水浒英雄街店
+//heroNode水浒英雄节点
 @Getter
 @Setter
 class HeroNode{
