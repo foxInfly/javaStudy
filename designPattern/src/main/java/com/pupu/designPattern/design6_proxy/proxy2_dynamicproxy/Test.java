@@ -1,7 +1,5 @@
 package com.pupu.designPattern.design6_proxy.proxy2_dynamicproxy;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
