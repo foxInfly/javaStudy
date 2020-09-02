@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design5_proxy.proxy2_dynamicproxy;
+package com.pupu.designPattern.design6_proxy.proxy2_dynamicproxy;
 
 /**
  * @author lipu

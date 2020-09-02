@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design5_proxy.proxy3_cjlib;
+package com.pupu.designPattern.design6_proxy.proxy3_cjlib;
 
 /**
  * @author lipu

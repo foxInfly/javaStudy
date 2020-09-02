@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design5_proxy.proxy1_staticproxy;
+package com.pupu.designPattern.design6_proxy.proxy1_staticproxy;
 
 /**
  * 教学
