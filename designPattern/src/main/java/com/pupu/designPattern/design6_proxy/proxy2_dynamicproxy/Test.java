@@ -24,14 +24,12 @@ public class Test {
 
     //方法增强
     private static Car createSimple(Car object) {
-        return (Car) Proxy.newProxyInstance(Developer.class.getClassLoader(), Developer.class.getInterfaces(), new InvocationHandler() {
-            @Override
-            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                System.out.println("联系房产中介");
-                method.invoke(object,args);
-                System.out.println("与房产中介交易");
-                return null;
-            }
-        });
+        return (Car) Proxy.newProxyInstance(Developer.class.getClassLoader(), Developer.class.getInterfaces()
+                , ((proxy, method, args) -> {
+                    System.out.println("联系房产中介");
+                    method.invoke(object, args);
+                    System.out.println("与房产中介交易");
+                    return null;
+                }));
     }
 }
