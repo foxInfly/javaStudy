@@ -1,4 +1,4 @@
-package com.pupu.designPattern.singleton.singleton7_enum_lazy;
+package com.pupu.designPattern.singleton.singleton7_enum_hungry;
 
 /**
  * 懒汉-枚举
