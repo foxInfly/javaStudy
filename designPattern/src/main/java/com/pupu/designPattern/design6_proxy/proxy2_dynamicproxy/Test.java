@@ -1,5 +1,7 @@
 package com.pupu.designPattern.design6_proxy.proxy2_dynamicproxy;
 
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
@@ -13,6 +15,23 @@ public class Test {
         developer.buyCar();
         Car carProxy = (Car) Proxy.newProxyInstance(Developer.class.getClassLoader(), Developer.class.getInterfaces(), new HouseAgent());
         carProxy.buyCar();
+        System.out.println();
+        System.out.println("-------------------------------------------");
+        System.out.println();
+        Car carproxy1 = Test.createSimple(developer);
+        carproxy1.buyCar();
+    }
 
+    //方法增强
+    private static Car createSimple(Car object) {
+        return (Car) Proxy.newProxyInstance(Developer.class.getClassLoader(), Developer.class.getInterfaces(), new InvocationHandler() {
+            @Override
+            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                System.out.println("联系房产中介");
+                method.invoke(object,args);
+                System.out.println("与房产中介交易");
+                return null;
+            }
+        });
     }
 }
