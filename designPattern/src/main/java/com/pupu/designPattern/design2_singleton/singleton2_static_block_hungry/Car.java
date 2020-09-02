@@ -1,4 +1,4 @@
-package com.pupu.designPattern.singleton.singleton2_static_block_hungry;
+package com.pupu.designPattern.design2_singleton.singleton2_static_block_hungry;
 
 /**饿汉-静态代码块(和常量类似，就是方式变一变，装逼而已)
  *    1.私有化构造器

@@ -1,4 +1,4 @@
-package com.pupu.designPattern.prototype;
+package com.pupu.designPattern.design4_prototype;
 
 import java.io.*;
 

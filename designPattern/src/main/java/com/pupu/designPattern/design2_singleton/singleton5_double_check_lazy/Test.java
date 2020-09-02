@@ -1,4 +1,4 @@
-package com.pupu.designPattern.singleton.singleton3_synchronized_method_lazy;
+package com.pupu.designPattern.design2_singleton.singleton5_double_check_lazy;
 
 /**
  * @author lipu

@@ -1,4 +1,4 @@
-package com.pupu.designPattern.singleton.singleton7_enum_hungry;
+package com.pupu.designPattern.design2_singleton.singleton7_enum_hungry;
 
 /**
  * @author lipu

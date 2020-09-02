@@ -1,4 +1,4 @@
-package com.pupu.designPattern.singleton.singleton4_synchronized_block_lazy;
+package com.pupu.designPattern.design2_singleton.singleton4_synchronized_block_lazy;
 
 /**
  * @author lipu

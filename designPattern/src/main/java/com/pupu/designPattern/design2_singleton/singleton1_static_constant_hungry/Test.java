@@ -1,4 +1,4 @@
-package com.pupu.designPattern.singleton.singleton5_double_check_lazy;
+package com.pupu.designPattern.design2_singleton.singleton1_static_constant_hungry;
 
 /**
  * @author lipu

@@ -1,4 +1,4 @@
-package com.pupu.designPattern.singleton.singleton1_static_constant_hungry;
+package com.pupu.designPattern.design2_singleton.singleton2_static_block_hungry;
 
 /**
  * @author lipu

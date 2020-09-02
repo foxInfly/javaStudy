@@ -1,4 +1,4 @@
-package com.pupu.designPattern.singleton.singleton3_synchronized_method_lazy;
+package com.pupu.designPattern.design2_singleton.singleton3_synchronized_method_lazy;
 
 /**
  * 懒汉-静态方法

@@ -1,4 +1,4 @@
-package com.pupu.designPattern.prototype;
+package com.pupu.designPattern.design4_prototype;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
@@ -26,6 +26,7 @@ public class Sheep implements Cloneable{
         Sheep sheep = null;
 
         try {
+            //clone默认是浅拷贝
             sheep = (Sheep) super.clone();
         } catch (CloneNotSupportedException e) {
             System.out.println("出现异常");

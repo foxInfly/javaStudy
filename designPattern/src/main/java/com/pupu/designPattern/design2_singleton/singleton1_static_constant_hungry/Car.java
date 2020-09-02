@@ -1,4 +1,4 @@
-package com.pupu.designPattern.singleton.singleton1_static_constant_hungry;
+package com.pupu.designPattern.design2_singleton.singleton1_static_constant_hungry;
 
 /**饿汉-静态常量
  *    1.私有化构造器

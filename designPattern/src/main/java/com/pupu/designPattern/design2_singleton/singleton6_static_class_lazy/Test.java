@@ -1,4 +1,4 @@
-package com.pupu.designPattern.singleton.singleton2_static_block_hungry;
+package com.pupu.designPattern.design2_singleton.singleton6_static_class_lazy;
 
 /**
  * @author lipu
