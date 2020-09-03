@@ -3,7 +3,7 @@ package com.pupu.designPattern.design4_prototype.general;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/**shallow clone
  * Created by Tom.
  */
 public class Client1 {
