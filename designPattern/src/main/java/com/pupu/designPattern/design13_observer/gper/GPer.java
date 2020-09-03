@@ -2,7 +2,7 @@ package com.pupu.designPattern.design13_observer.gper;
 
 import java.util.Observable;
 
-/**
+/**被观察者
  * Created by Tom.
  */
 public class GPer extends Observable {

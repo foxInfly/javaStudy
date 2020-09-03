@@ -1,6 +1,6 @@
 package com.pupu.designPattern.design13_observer.gper;
 
-/**
+/**事件
  * Created by Tom.
  */
 public class Question {

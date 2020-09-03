@@ -3,7 +3,7 @@ package com.pupu.designPattern.design13_observer.gper;
 import java.util.Observable;
 import java.util.Observer;
 
-/**
+/**观察者
  * Created by Tom.
  */
 public class Teacher implements Observer {
