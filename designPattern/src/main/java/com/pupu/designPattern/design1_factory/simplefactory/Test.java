@@ -1,8 +1,5 @@
 package com.pupu.designPattern.design1_factory.simplefactory;
 
-import com.pupu.designPattern.factory.simplefactory.ICourse;
-import com.pupu.designPattern.factory.simplefactory.SimpleFactory;
-
 import java.util.Random;
 
 /**
