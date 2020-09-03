@@ -13,6 +13,7 @@ public class Test {
 
         PojoEvent guavaEvent = new PojoEvent();
         VoEvent voEvent = new VoEvent();
+
         eventBus.register(guavaEvent);
         eventBus.register(voEvent);
 

@@ -7,10 +7,11 @@ import com.google.common.eventbus.Subscribe;
  */
 public class VoEvent {
 
+    //观察者的回调
     @Subscribe
     public void observer(Vo arg){
 //        if(arg instanceof Vo){
-            System.out.println("执行VoEvent方法，传参为：" + arg);
+            System.out.println("执行VoEvent方法，Vo传参为：" + arg);
 //        }
 
     }
