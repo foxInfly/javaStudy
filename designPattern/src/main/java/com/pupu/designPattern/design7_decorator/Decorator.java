@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design7_decotator;
+package com.pupu.designPattern.design7_decorator;
 
 /**装饰器就是代理模式的一种特殊形式
  * @author lipu
