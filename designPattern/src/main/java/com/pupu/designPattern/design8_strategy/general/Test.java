@@ -1,11 +1,11 @@
 package com.pupu.designPattern.design8_strategy.general;
 
-/**
+/** 好像工厂模式
  * Created by Tom.
  */
 public class Test {
     public static void main(String[] args) {
-        //选择一个具体策略
+        //select one ConcreteStrategy
         IStrategy strategy = new ConcreteStrategyA();
         //来一个上下文环境
         Context context = new Context(strategy);

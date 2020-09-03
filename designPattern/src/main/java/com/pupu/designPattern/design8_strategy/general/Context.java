@@ -1,6 +1,8 @@
 package com.pupu.designPattern.design8_strategy.general;
 
-//上下文环境
+/**
+ * Context
+ */
 public class Context {
     private IStrategy mStrategy;
 

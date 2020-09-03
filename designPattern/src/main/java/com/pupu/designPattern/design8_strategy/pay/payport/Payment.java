@@ -1,6 +1,6 @@
 package com.pupu.designPattern.design8_strategy.pay.payport;
 
-import com.gupaoedu.vip.pattern.strategy.pay.MsgResult;
+import com.pupu.designPattern.design8_strategy.pay.MsgResult;
 
 /**
  * Created by Tom.
