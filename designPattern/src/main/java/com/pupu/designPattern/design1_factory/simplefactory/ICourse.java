@@ -1,4 +1,4 @@
-package com.pupu.designPattern.factory.simplefactory;
+package com.pupu.designPattern.design1_factory.simplefactory;
 
 /**课程
  * @author : lipu

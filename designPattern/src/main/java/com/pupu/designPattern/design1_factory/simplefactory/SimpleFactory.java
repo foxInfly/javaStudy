@@ -1,4 +1,6 @@
-package com.pupu.designPattern.factory.simplefactory;
+package com.pupu.designPattern.design1_factory.simplefactory;
+
+import com.pupu.designPattern.factory.simplefactory.ICourse;
 
 /**
  * 简单工厂模式
