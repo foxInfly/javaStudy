@@ -1,7 +1,7 @@
 package com.pupu.designPattern.design9_delegate.simple;
 
 /**
- * Created by Tom.
+ * employee雇员
  */
 public interface IEmployee {
     void doing(String task);

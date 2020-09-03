@@ -2,7 +2,7 @@ package com.pupu.designPattern.design9_delegate.general;
 
 import java.util.Random;
 /**
- * 代理角色
+ * Delegater
  */
 public class Delegate implements Task{
     public void doTask() {

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Tom.
+ * Leader
  */
 public class Leader implements IEmployee {
 
