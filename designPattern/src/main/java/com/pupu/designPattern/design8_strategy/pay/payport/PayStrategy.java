@@ -13,6 +13,7 @@ public class PayStrategy {
     public static  final String UNION_PAY = "UnionPay";
     public static  final String DEFAULT_PAY = ALI_PAY;
 
+    //容器Map
     private static Map<String,Payment> strategy = new HashMap<String,Payment>();
 
     static {
