@@ -1,38 +1,46 @@
 package com.pupu.designPattern.design3_builder.sql;
 
-import lombok.Data;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * QueryRule,主要功能用于构造查询条件
+ * QueryRule,主要功能用于构造查询条件rule
  *
  * @author Tom
  */
 public final class QueryRule implements Serializable {
     private static final long serialVersionUID = 1L;
-    public static final int ASC_ORDER = 101;  //--> 正序
-    public static final int DESC_ORDER = 102; //--> 倒叙
-    public static final int LIKE = 1;        //--> like
-    public static final int IN = 2;      //--> in
-    public static final int NOTIN = 3;   //--> not in
-    public static final int BETWEEN = 4; //--> between
-    public static final int EQ = 5;      //--> eq =
-    public static final int NOTEQ = 6;   //--> noteq !=
-    public static final int GT = 7;      //--> greater then >
-    public static final int GE = 8;      //--> greater equals >=
-    public static final int LT = 9;      //--> less then <
-    public static final int LE = 10;     //--> lesss equals <=
-    public static final int ISNULL = 11; //--> is null
-    public static final int ISNOTNULL = 12; //--> is not null
-    public static final int ISEMPTY = 13; //--> is empty
-    public static final int ISNOTEMPTY = 14; //--> is not empty
-    public static final int AND = 201;   //--> end
-    public static final int OR = 202;    //--> or
-    private List<Rule> ruleList = new ArrayList<Rule>();
-    private List<QueryRule> queryRuleList = new ArrayList<QueryRule>();
+
+    /**排序：正序\倒序*/
+    public static final int ASC_ORDER = 101;
+    public static final int DESC_ORDER = 102;
+
+    /**like||in||not in||between||eq =||noteq !=||greater then gt >|| greater equals >=|| less then <|| lesss equals <=|| is null|| is not null ||is empty ||is not empty || || || || */
+    public static final int LIKE = 1;
+    public static final int IN = 2;
+    public static final int NOTIN = 3;
+    public static final int BETWEEN = 4;
+    public static final int EQ = 5;
+    public static final int NOTEQ = 6;
+    public static final int GT = 7;
+    public static final int GE = 8;
+    public static final int LT = 9;
+    public static final int LE = 10;
+    public static final int ISNULL = 11;
+    public static final int ISNOTNULL = 12;
+    public static final int ISEMPTY = 13;
+    public static final int ISNOTEMPTY = 14;
+
+    /** and||or*/
+    public static final int AND = 201;
+    public static final int OR = 202;
+
+
+    private List<Rule> ruleList = new ArrayList<>();
+    private List<QueryRule> queryRuleList = new ArrayList<>();
+
+    /**属性（字段）名*/
     private String propertyName;
 
     private QueryRule() {
@@ -240,7 +248,7 @@ public final class QueryRule implements Serializable {
         private static final long serialVersionUID = 1L;
         private int type;    //规则的类型
         private String property_name;//规则对应的值字段属性名称，比如：order by id
-        private Object[] values;
+        private Object[] values;//条件判断的值
         private int andOr = AND;
 
         public Rule(int paramInt, String paramString) {
@@ -248,11 +256,10 @@ public final class QueryRule implements Serializable {
             this.type = paramInt;
         }
 
-        public Rule(int paramInt, String paramString,
-                    Object[] paramArrayOfObject) {
+        public Rule(int paramInt, String paramString, Object[] paramArrayOfObject) {
             this.property_name = paramString;
-            this.values = paramArrayOfObject;
             this.type = paramInt;
+            this.values = paramArrayOfObject;
         }
 
         public Rule setAndOr(int andOr) {

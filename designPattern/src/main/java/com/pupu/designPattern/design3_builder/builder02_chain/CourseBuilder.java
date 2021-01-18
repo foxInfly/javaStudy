@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design3_builder.chain;
+package com.pupu.designPattern.design3_builder.builder02_chain;
 
 import lombok.Data;
 

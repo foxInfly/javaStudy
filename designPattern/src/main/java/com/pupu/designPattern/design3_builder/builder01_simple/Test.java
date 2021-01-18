@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design3_builder.simple;
+package com.pupu.designPattern.design3_builder.builder01_simple;
 
 /**
  * Created by geely

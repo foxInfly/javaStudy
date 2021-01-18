@@ -1,10 +1,8 @@
-package com.pupu.designPattern.design3_builder.chain;
+package com.pupu.designPattern.design3_builder.builder02_chain;
 
 import org.apache.ibatis.mapping.CacheBuilder;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
-
-import java.util.Set;
 
 /**
  * Created by Tom
