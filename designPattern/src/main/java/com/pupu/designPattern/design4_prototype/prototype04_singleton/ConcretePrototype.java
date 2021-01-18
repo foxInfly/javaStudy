@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design4_prototype.singleton;
+package com.pupu.designPattern.design4_prototype.prototype04_singleton;
 
 
 import lombok.Data;

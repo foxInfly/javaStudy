@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design4_prototype.deep;
+package com.pupu.designPattern.design4_prototype.prototype04_singleton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,17 +11,18 @@ public class Client {
 
     public static void main(String[] args) {
         //创建原型对象
-        ConcretePrototype prototype = new ConcretePrototype();
+        ConcretePrototype prototype = ConcretePrototype.getInstance();
         prototype.setAge(18);
         prototype.setName("Tom");
-        List<String> hobbies = new ArrayList<String>();
+        List<String> hobbies = new ArrayList<>();
         hobbies.add("书法");
         hobbies.add("美术");
         prototype.setHobbies(hobbies);
 
         //拷贝原型对象
-        ConcretePrototype cloneType = prototype.deepCloneHobbies();
+        ConcretePrototype cloneType = prototype.clone();
         cloneType.getHobbies().add("技术控");
+
 
         System.out.println("原型对象：" + prototype);
         System.out.println("克隆对象：" + cloneType);

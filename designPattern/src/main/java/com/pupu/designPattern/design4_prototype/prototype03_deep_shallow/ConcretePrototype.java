@@ -1,22 +1,24 @@
-package com.pupu.designPattern.design4_prototype.deep;
+package com.pupu.designPattern.design4_prototype.prototype03_deep_shallow;
 
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Tom.
  */
 @Data
+@Accessors(chain = true)
 public class ConcretePrototype implements Cloneable,Serializable {
 
     private int age;
     private String name;
     private List<String> hobbies;
 
+    //浅clone
     @Override
     public ConcretePrototype clone() {
         try {
@@ -27,17 +29,8 @@ public class ConcretePrototype implements Cloneable,Serializable {
         }
     }
 
-    public ConcretePrototype deepCloneHobbies(){
-        try {
-            ConcretePrototype result = (ConcretePrototype)super.clone();
-            result.hobbies = (List)((ArrayList)result.hobbies).clone();
-            return result;
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
 
+    //序列化实现深clone
     public ConcretePrototype deepClone(){
         try {
             ByteArrayOutputStream bos = new ByteArrayOutputStream();
@@ -56,12 +49,4 @@ public class ConcretePrototype implements Cloneable,Serializable {
 
     }
 
-    @Override
-    public String toString() {
-        return "ConcretePrototype{" +
-                "age=" + age +
-                ", name='" + name + '\'' +
-                ", hobbies=" + hobbies +
-                '}';
-    }
 }

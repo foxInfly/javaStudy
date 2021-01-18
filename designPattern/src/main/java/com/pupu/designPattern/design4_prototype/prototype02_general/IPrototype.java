@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design4_prototype.general;
+package com.pupu.designPattern.design4_prototype.prototype02_general;
 
 /**
  * Created by Tom.

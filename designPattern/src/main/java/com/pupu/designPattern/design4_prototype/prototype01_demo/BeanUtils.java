@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design4_prototype.demo;
+package com.pupu.designPattern.design4_prototype.prototype01_demo;
 
 import java.lang.reflect.Field;
 
@@ -7,6 +7,7 @@ import java.lang.reflect.Field;
  */
 public class BeanUtils {
 
+    //利用反射clone,是浅克隆
     public static Object copy(Object protorype) {
         Class clazz = protorype.getClass();
         Object returnValue = null;
