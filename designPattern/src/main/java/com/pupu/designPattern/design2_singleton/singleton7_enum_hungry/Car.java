@@ -11,7 +11,7 @@ package com.pupu.designPattern.design2_singleton.singleton7_enum_hungry;
  * 缺点：
  *
  * 适用场景：
- *    效率较高；推荐使用
+ *    固定的对象，效率较高；推荐使用
  *
  * @author lipu
  * @since 2020-09-02 10:14:33
