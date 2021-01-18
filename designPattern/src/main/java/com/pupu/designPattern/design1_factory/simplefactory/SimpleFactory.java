@@ -9,7 +9,6 @@ package com.pupu.designPattern.design1_factory.simplefactory;
 public class SimpleFactory {
 
     public static ICourse createCourse(String classPath) throws Exception {
-        ICourse course  = (ICourse) Class.forName(classPath).newInstance();
-        return course;
+        return (ICourse) Class.forName(classPath).newInstance();
     }
 }

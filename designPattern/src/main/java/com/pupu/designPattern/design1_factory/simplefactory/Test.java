@@ -8,17 +8,15 @@ import java.util.Random;
  */
 public class Test {
 
-    public static void main(String[] args) throws Exception{
-        String[] courses= new String[3];
-        courses[0]="com.pupu.designPattern.factory.simplefactory.PythonCourse";
-        courses[1]="com.pupu.designPattern.factory.simplefactory.LinuxCourse";
-        courses[2]="com.pupu.designPattern.factory.simplefactory.JavaCourse";
-        for (int i = 0; i < 10; i++) {
-            int j = new Random().nextInt(3);
-            ICourse course = SimpleFactory.createCourse(courses[j]);
-            String courseName = course.getName();
-            System.out.println("我是一门 "+ courseName +"课程");
-        }
+    public static void main(String[] args) throws Exception {
+        //反射
+        String[] courses = {JavaCourse.class.getName(), LinuxCourse.class.getName(), PythonCourse.class.getName()};
+
+        int index = new Random().nextInt(courses.length);
+
+        ICourse course = SimpleFactory.createCourse(courses[index]);
+
+        System.out.println("我是一门 " + course.getName() + "课程");
 
     }
 }
