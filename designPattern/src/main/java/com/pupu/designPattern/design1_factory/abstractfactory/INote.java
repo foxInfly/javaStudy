@@ -5,6 +5,6 @@ package com.pupu.designPattern.design1_factory.abstractfactory;
  * @since : 2020-09-01 23:17
  */
 public interface INote {
-    //老师创建笔记
+    //老师编写笔记
     void edit();
 }
