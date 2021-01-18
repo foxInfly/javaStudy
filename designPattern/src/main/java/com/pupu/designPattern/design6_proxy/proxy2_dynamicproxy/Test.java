@@ -11,22 +11,20 @@ public class Test {
     public static void main(String[] args) {
         Car developer = new Developer();
         developer.buyCar();
+
         Car carProxy = (Car) Proxy.newProxyInstance(Developer.class.getClassLoader(), Developer.class.getInterfaces(), new HouseAgent());
         carProxy.buyCar();
-        System.out.println();
-        System.out.println("-------------------------------------------");
-        System.out.println();
+        System.out.println("\n-------------------------------------------\n");
         Car carproxy1 = Test.createSimple(developer);
         carproxy1.buyCar();
     }
 
     //方法增强
     private static Car createSimple(Car object) {
-        return (Car) Proxy.newProxyInstance(Developer.class.getClassLoader(), Developer.class.getInterfaces()
-                , ((proxy, method, args) -> {
-                    System.out.println("联系房产中介");
+        return (Car) Proxy.newProxyInstance(Developer.class.getClassLoader(), Developer.class.getInterfaces() , ((proxy, method, args) -> {
+                    System.out.println("联系房产中介1");
                     method.invoke(object, args);
-                    System.out.println("与房产中介交易");
+                    System.out.println("与房产中介交易1");
                     return null;
                 }));
     }
