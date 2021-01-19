@@ -1,10 +1,13 @@
-package com.pupu.designPattern.design16_composite.demo.transparent;
+package com.pupu.designPattern.design16_composite.composite02_demo.course;
 
 /**
  * Created by Tom.
  */
 public class Course extends CourseComponent {
+
+    /**课程名称*/
     private String name;
+    /**课程价格*/
     private double price;
 
     public Course(String name, double price) {

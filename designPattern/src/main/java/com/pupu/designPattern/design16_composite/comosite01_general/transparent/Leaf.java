@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design16_composite.general.safe;
+package com.pupu.designPattern.design16_composite.comosite01_general.transparent;
 
 //叶子节点
 public class Leaf extends Component {

@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design16_composite.general.transparent;
+package com.pupu.designPattern.design16_composite.comosite01_general.transparent;
 
 /**
  * Created by Tom.

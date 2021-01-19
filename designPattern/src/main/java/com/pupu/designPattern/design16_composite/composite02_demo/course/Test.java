@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design16_composite.demo.transparent;
+package com.pupu.designPattern.design16_composite.composite02_demo.course;
 
 /**
  * Created by Tom.

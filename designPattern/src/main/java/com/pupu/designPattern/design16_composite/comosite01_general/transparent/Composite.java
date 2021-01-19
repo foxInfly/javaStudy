@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design16_composite.general.transparent;
+package com.pupu.designPattern.design16_composite.comosite01_general.transparent;
 
 import java.util.ArrayList;
 import java.util.List;

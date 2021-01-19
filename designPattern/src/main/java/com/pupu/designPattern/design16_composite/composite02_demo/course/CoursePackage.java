@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design16_composite.demo.transparent;
+package com.pupu.designPattern.design16_composite.composite02_demo.course;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,14 +37,12 @@ public class CoursePackage extends CourseComponent {
         System.out.println(this.name);
 
         for(CourseComponent catalogComponent : items){
-            //控制显示格式
             if(this.level != null){
                 for(int  i = 0; i < this.level; i ++){
-                    //打印空格控制格式
                     System.out.print("  ");
                 }
+
                 for(int  i = 0; i < this.level; i ++){
-                    //每一行开始打印一个+号
                     if(i == 0){ System.out.print("+"); }
                     System.out.print("-");
                 }
