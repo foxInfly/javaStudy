@@ -1,6 +1,6 @@
-package com.pupu.designPattern.design12_visitor.general;
+package com.pupu.designPattern.design12_visitor.visitor01_general;
 
-// 抽象访问者
+//抽象访问者
 public interface IClient {
 
     /**访问房子A

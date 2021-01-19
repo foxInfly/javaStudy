@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design12_visitor.kpi;
+package com.pupu.designPattern.design12_visitor.visitor02_kpi;
 
 import java.util.Random;
 

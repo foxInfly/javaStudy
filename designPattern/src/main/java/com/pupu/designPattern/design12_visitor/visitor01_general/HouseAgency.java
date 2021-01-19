@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design12_visitor.general;
+package com.pupu.designPattern.design12_visitor.visitor01_general;
 
 import java.util.ArrayList;
 import java.util.List;

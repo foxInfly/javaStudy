@@ -1,11 +1,11 @@
-package com.pupu.designPattern.design12_visitor.kpi;
+package com.pupu.designPattern.design12_visitor.visitor02_kpi;
 
 /**
  * Created by Tom.
  */
 public class CEOVistitor implements IVisitor {
     public void visit(Engineer engineer) {
-        System.out.println("工程师" +  engineer.name + "，KIP：" + engineer.kpi);
+        System.out.println("工程师：" +  engineer.name + "，KPI：" + engineer.kpi);
     }
 
     public void visit(Manager manager) {
