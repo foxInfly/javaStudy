@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design8_strategy.general;
+package com.pupu.designPattern.design8_strategy.strategy01_general;
 
 // ConcreteStrategyB
 public class ConcreteStrategyB implements IStrategy {

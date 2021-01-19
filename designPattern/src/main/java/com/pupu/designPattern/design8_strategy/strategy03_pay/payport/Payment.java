@@ -1,6 +1,6 @@
-package com.pupu.designPattern.design8_strategy.pay.payport;
+package com.pupu.designPattern.design8_strategy.strategy03_pay.payport;
 
-import com.pupu.designPattern.design8_strategy.pay.MsgResult;
+import com.pupu.designPattern.design8_strategy.strategy03_pay.MsgResult;
 
 /**
  * Created by Tom.
@@ -12,7 +12,7 @@ public abstract class Payment {
      */
     public abstract String getPayChannelName();
 
-    /**pay service
+    /**strategy03_pay service
      *
      * @param uid 用户id
      * @param amount 要支付的金额

@@ -1,6 +1,6 @@
-package com.pupu.designPattern.design8_strategy.promotion;
+package com.pupu.designPattern.design8_strategy.strategy02_promotion;
 
-/**
+/**提前把厕所放到集合中实现
  * Created by Tom.
  */
 public class Test {

@@ -1,15 +1,15 @@
-package com.pupu.designPattern.design8_strategy.promotion;
+package com.pupu.designPattern.design8_strategy.strategy02_promotion;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-/**
+/** 提前把策略放到一个集合中
  * Created by Tom.
  */
 public class PromotionStrategyFacory {
 
-    private static Map<String,IPromotionStrategy> PROMOTIONS = new HashMap<String,IPromotionStrategy>();
+    private static Map<String,IPromotionStrategy> PROMOTIONS = new HashMap<>();
 
     static {
         PROMOTIONS.put(PromotionKey.COUPON,new CouponStrategy());
@@ -31,6 +31,8 @@ public class PromotionStrategyFacory {
         String GROUPBUY = "GROUPBUY";
     }
 
+    /**初始化策略
+     **/
     public static  Set<String> getPromotionKeys(){
         return PROMOTIONS.keySet();
     }

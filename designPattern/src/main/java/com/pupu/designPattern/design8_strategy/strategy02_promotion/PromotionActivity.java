@@ -1,6 +1,6 @@
-package com.pupu.designPattern.design8_strategy.promotion;
+package com.pupu.designPattern.design8_strategy.strategy02_promotion;
 
-/**
+/**打折活动
  * Created by Tom.
  */
 public class PromotionActivity {

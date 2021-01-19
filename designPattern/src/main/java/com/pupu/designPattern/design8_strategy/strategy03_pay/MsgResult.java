@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design8_strategy.pay;
+package com.pupu.designPattern.design8_strategy.strategy03_pay;
 
 /**
  * Created by Tom.

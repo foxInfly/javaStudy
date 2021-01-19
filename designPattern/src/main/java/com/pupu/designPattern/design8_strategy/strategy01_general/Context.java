@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design8_strategy.general;
+package com.pupu.designPattern.design8_strategy.strategy01_general;
 
 /**
  * Context
@@ -10,7 +10,7 @@ public class Context {
         this.mStrategy = strategy;
     }
 
-    public void algorithm() {
+    public void getAlgorithm() {
         this.mStrategy.algorithm();
     }
 }
