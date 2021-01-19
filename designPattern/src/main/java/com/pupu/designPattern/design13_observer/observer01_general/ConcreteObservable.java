@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design13_observer.general;
+package com.pupu.designPattern.design13_observer.observer01_general;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,10 +7,10 @@ import java.util.List;
  * @author lipu
  * @since  2020/9/3 22:09
  */
-public class ConcreteSubject<E> implements ISubject<E> {
+public class ConcreteObservable<E> implements IObservable<E> {
 
     //观察者容器
-    private List<IObserver<E>> observers = new ArrayList<IObserver<E>>();
+    private List<IObserver<E>> observers = new ArrayList<>();
 
     public boolean attach(IObserver<E> observer) {
         return !this.observers.contains(observer) && this.observers.add(observer);

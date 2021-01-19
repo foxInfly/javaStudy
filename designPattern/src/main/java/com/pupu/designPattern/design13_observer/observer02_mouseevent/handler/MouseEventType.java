@@ -1,6 +1,6 @@
-package com.pupu.designPattern.design13_observer.mouseevent.handler;
+package com.pupu.designPattern.design13_observer.observer02_mouseevent.handler;
 
-/**
+/** mouse event type
  * Created by Tom.
  */
 public interface MouseEventType {

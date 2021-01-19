@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design13_observer.gper;
+package com.pupu.designPattern.design13_observer.observer03_gper;
 
 import java.util.Observable;
 
@@ -19,6 +19,7 @@ public class GPer extends Observable {
         return name;
     }
 
+    /**发布问题*/
     public void publishQuestion(Question question){
         System.out.println(question.getUserName() + "在" + this.name + "上提交了一个问题。");
         setChanged();

@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design13_observer.general;
+package com.pupu.designPattern.design13_observer.observer01_general;
 
 /**观察者
  * @author lipu

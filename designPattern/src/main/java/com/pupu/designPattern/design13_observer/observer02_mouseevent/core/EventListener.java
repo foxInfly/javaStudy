@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design13_observer.mouseevent.core;
+package com.pupu.designPattern.design13_observer.observer02_mouseevent.core;
 
 
 /**

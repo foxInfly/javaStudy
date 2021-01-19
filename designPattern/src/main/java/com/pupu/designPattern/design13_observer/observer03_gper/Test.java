@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design13_observer.gper;
+package com.pupu.designPattern.design13_observer.observer03_gper;
 
 /**
  * Created by Tom.
@@ -6,11 +6,9 @@ package com.pupu.designPattern.design13_observer.gper;
 public class Test {
     public static void main(String[] args) {
         GPer gper = GPer.getInstance();
-        Teacher tom = new Teacher("Tom");
-        Teacher jerry = new Teacher("Jerry");
 
-        gper.addObserver(tom);
-        gper.addObserver(jerry);
+        gper.addObserver(new Teacher("Tom"));
+        gper.addObserver(new Teacher("Jerry"));
 
         //用户行为
         Question question = new Question();

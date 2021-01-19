@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design13_observer.gper;
+package com.pupu.designPattern.design13_observer.observer03_gper;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -8,6 +8,7 @@ import java.util.Observer;
  */
 public class Teacher implements Observer {
 
+    /**teache name*/
     private String name;
 
     public Teacher(String name) {

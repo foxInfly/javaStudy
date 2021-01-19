@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design13_observer.guava;
+package com.pupu.designPattern.design13_observer.observer04_guava;
 
 import com.google.common.eventbus.Subscribe;
 

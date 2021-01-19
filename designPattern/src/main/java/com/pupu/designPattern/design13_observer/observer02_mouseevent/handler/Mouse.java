@@ -1,6 +1,6 @@
-package com.pupu.designPattern.design13_observer.mouseevent.handler;
+package com.pupu.designPattern.design13_observer.observer02_mouseevent.handler;
 
-import com.pupu.designPattern.design13_observer.mouseevent.core.EventContext;
+import com.pupu.designPattern.design13_observer.observer02_mouseevent.core.EventContext;
 
 /**
  * 具体的被观察者
