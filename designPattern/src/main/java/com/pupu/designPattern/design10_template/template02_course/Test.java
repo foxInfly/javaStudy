@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design10_template.course;
+package com.pupu.designPattern.design10_template.template02_course;
 
 /**
  * Created by Tom.
@@ -11,7 +11,7 @@ public class Test {
         java.createCourse();
 
 
-        System.out.println("=========Python课程=========");
+        System.out.println("\n=========Python课程=========");
         PythonCourse python = new PythonCourse();
         python.createCourse();
     }

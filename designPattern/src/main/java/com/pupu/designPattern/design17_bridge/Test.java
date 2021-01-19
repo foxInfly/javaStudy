@@ -12,10 +12,10 @@ public class Test {
     public static void main(String[] args) {
         try {
             //1.加载驱动
-            Class.forName("com.mysql.jdbc.Driver");  //反射机制加载驱动类
+            Class.forName("com.mysql.template03_jdbc.Driver");  //反射机制加载驱动类
             // 2.获取连接Connection
             //主机:端口号/数据库名
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "root");
+            Connection conn = DriverManager.getConnection("template03_jdbc:mysql://localhost:3306/test", "root", "root");
             // 3.得到执行sql语句的对象Statement
             Statement stmt = conn.createStatement();
             // 4.执行sql语句，并返回结果

@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design10_template.jdbc.entity;
+package com.pupu.designPattern.design10_template.template03_jdbc.entity;
 
 /**
  * Created by Tom.

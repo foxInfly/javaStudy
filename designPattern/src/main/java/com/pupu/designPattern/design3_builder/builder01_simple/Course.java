@@ -8,15 +8,15 @@ import lombok.Data;
 @Data
 public class Course {
 
-    //course name
+    //template02_course name
     private String name;
-    //course ppt
+    //template02_course ppt
     private String ppt;
-    //course video
+    //template02_course video
     private String video;
-    //course note
+    //template02_course note
     private String note;
-    //course homework
+    //template02_course homework
     private String homework;
 
 }

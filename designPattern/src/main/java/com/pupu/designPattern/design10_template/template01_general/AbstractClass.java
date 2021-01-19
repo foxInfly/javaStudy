@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design10_template.general;
+package com.pupu.designPattern.design10_template.template01_general;
 
 // 抽象模板类
 public abstract class AbstractClass {

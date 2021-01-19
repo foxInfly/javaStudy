@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design10_template.course;
+package com.pupu.designPattern.design10_template.template02_course;
 
 /**
  * Created by Tom.

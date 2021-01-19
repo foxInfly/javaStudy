@@ -1,6 +1,6 @@
-package com.pupu.designPattern.design10_template.jdbc;
+package com.pupu.designPattern.design10_template.template03_jdbc;
 
-import com.pupu.designPattern.design10_template.jdbc.dao.MemberDao;
+import com.pupu.designPattern.design10_template.template03_jdbc.dao.MemberDao;
 
 import java.util.List;
 

@@ -19,8 +19,8 @@
 
     &lt;!&ndash; 配置数据源 &ndash;&gt;
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
-        <property name="jdbcUrl" value="jdbc:mysql://192.168.3.52:3307/mybatis01?useUnicode=true&amp;characterEncoding=UTF-8"/>
+        <property name="driverClass" value="com.mysql.template03_jdbc.Driver"/>
+        <property name="jdbcUrl" value="template03_jdbc:mysql://192.168.3.52:3307/mybatis01?useUnicode=true&amp;characterEncoding=UTF-8"/>
         <property name="user" value="root"/>
         <property name="password" value="123456"/>
     </bean>-->

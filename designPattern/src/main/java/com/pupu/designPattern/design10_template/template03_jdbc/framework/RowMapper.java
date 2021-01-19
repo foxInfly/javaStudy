@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design10_template.jdbc.framework;
+package com.pupu.designPattern.design10_template.template03_jdbc.framework;
 
 import java.sql.ResultSet;
 

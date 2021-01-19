@@ -1,9 +1,9 @@
-package com.pupu.designPattern.design10_template.jdbc.dao;
+package com.pupu.designPattern.design10_template.template03_jdbc.dao;
 
 
-import com.pupu.designPattern.design10_template.jdbc.entity.Member;
-import com.pupu.designPattern.design10_template.jdbc.framework.JdbcTemplate;
-import com.pupu.designPattern.design10_template.jdbc.framework.RowMapper;
+import com.pupu.designPattern.design10_template.template03_jdbc.entity.Member;
+import com.pupu.designPattern.design10_template.template03_jdbc.framework.JdbcTemplate;
+import com.pupu.designPattern.design10_template.template03_jdbc.framework.RowMapper;
 
 import javax.sql.DataSource;
 import java.sql.ResultSet;
