@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design1_factory.factorymethod;
+package com.pupu.designPattern.design1_factory.factory02_factorymethod;
 
 /**工厂方法:
  *     一个类通过其子类来指定创建哪个对象；

@@ -1,4 +1,4 @@
-package com.pupu.designPattern.design1_factory.abstractfactory;
+package com.pupu.designPattern.design1_factory.factory03_abstractfactory;
 
 /**
  * @author : lipu
