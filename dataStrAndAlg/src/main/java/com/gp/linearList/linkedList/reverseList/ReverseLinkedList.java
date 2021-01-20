@@ -9,22 +9,20 @@ package com.gp.linearList.linkedList.reverseList;
  */
 public class ReverseLinkedList {
 
-
-
-    //ListNode: 1 2 3 4 5
     public static ListNode reverseList(ListNode head) {
         if (head == null) {
             return null;
         }
         int count = 0;
         System.out.println("原始链表："+listListNode(head));
-        ListNode pre = head;//1->2
-        ListNode current = head.next;//2->3
+        ListNode pre = head;
+        ListNode current = head.next;
         pre.next = null;
         System.out.println("第"+count+"轮:" +listListNode(pre));
+
         while (current != null){
             count++;
-            ListNode next = current.next;//3->4
+            ListNode next = current.next;
             current.next = pre;
             pre = current;
             current = next;
