@@ -33,13 +33,13 @@ public class ReverseLinkedList2 {
         }
 
         ListNode preM = head;
-        ListNode mNode = head.next;
-        ListNode nNode = mNode;
-        ListNode postN = nNode.next;
+        ListNode mNode = head.next;//开始节点
+        ListNode nNode = mNode;//结束节点
+        ListNode postN = nNode.next;//需要反转的节点
 
         for (int i = m; i < n; i++) {
             count++;
-            ListNode next = postN.next;
+            ListNode next = postN.next;//下一个需要反转的节点
             postN.next = nNode;
             nNode = postN;
             postN = next;
