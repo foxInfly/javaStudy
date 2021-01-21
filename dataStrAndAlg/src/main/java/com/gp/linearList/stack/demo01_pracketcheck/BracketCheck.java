@@ -1,4 +1,4 @@
-package com.gp.linearList.stack.pracketcheck;
+package com.gp.linearList.stack.demo01_pracketcheck;
 
 import java.util.Stack;
 
