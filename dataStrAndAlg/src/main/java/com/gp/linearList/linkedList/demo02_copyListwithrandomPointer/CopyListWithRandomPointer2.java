@@ -1,4 +1,4 @@
-package com.gp.linearList.linkedList.copyListwithrandomPointer;
+package com.gp.linearList.linkedList.demo02_copyListwithrandomPointer;
 
 /**
  * copy list with random pointer 2

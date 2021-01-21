@@ -1,6 +1,4 @@
-package com.gp.linearList.linkedList.copyListwithrandomPointer;
-
-import com.gp.linearList.linkedList.reverseList.ListNode;
+package com.gp.linearList.linkedList.demo02_copyListwithrandomPointer;
 
 import java.util.HashMap;
 import java.util.Map;

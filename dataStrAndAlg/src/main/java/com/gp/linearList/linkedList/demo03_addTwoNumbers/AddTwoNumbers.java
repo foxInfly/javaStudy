@@ -1,4 +1,4 @@
-package com.gp.linearList.linkedList.addTwoNumbers;
+package com.gp.linearList.linkedList.demo03_addTwoNumbers;
 
 /** add two list
  * @author lp

@@ -45,7 +45,7 @@ public class DoubleLinkedListDemo {
 //        System.out.println("原列表：");
 //        singleLinkedList.list();
 //        System.out.println("反转单链表表：");
-//        reverseList(singleLinkedList.getHead());
+//        demo01_reverseList(singleLinkedList.getHead());
 //        singleLinkedList.list();
     }
 
