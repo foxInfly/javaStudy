@@ -26,7 +26,7 @@ public class ReverseLinkedList2 {
         dummy.next = head;
         head = dummy;
 
-        //找到开始位置的前一个节点
+        //找到开始位置的前一个节点,此节点不参与反转，会执行反转后的第一个
         for (int i = 1; i < m; i++) {
             head = head.next;
             System.out.println("处理后链表："+listListNode(head));
@@ -43,7 +43,6 @@ public class ReverseLinkedList2 {
             postN.next = nNode;
             nNode = postN;
             postN = next;
-            System.out.println("第"+count+"轮:" +listListNode(preM));
         }
 
         mNode.next = postN;
