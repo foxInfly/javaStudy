@@ -1,7 +1,7 @@
 package com.gp.demo04_binarySearch.demo01_SearchinRotatedarray;
 
 /**
- * 在旋转有序的数组中搜索
+ * 在旋转有序不重复的数组中搜索
  *
  * @author lp
  * @since 2021-01-22 15:47:38

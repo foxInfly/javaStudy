@@ -1,7 +1,7 @@
 package com.gp.demo04_binarySearch.demo02_findMinInRoatatedArray;
 
 /**
- * 在旋转有序数组中找最小
+ * 在旋转有序数组中找最小,数组有序不重复
  *
  * @author lp
  * @since 2021/1/22 16:35
