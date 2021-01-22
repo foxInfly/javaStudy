@@ -11,22 +11,31 @@ package com.gp.demo04_binarySearch.demo04_woodcut;
 public class WoodCut {
 
 
+    /**
+     *
+     * @param L 每块木头长度的集合
+     * @param k 需要得到的小段木头最少数
+     * @return 每块木头的最大长度
+     */
     public int woodCut(int[] L, int k) {
         if (L == null || L.length == 0) {
             return 0;
         }
+
         int start = 1;
         int end = getMax(L);
         int mid;
         while (start + 1 < end) {
             mid = start + (end - start) / 2;
             int pieces = getPieces(L, mid);
+            System.out.println("pieces: "+ pieces);
             if (pieces >= k) {
                 start = mid;
             } else {
                 end = mid;
             }
         }
+        System.out.println("start:" + start + " end:" + end);
         if (getPieces(L, end) >= k) {
             return end;
         }
@@ -36,6 +45,11 @@ public class WoodCut {
         return 0;
     }
 
+    /**
+     *  获取 长度最大的那块木头
+     * @param L 每块木头长度的集合
+     * @return 长度最大的那块木头的下标（索引）
+     */
     public int getMax(int[] L) {
         int max = L[0];
         for (int i = 1; i < L.length; i++) {
@@ -46,6 +60,12 @@ public class WoodCut {
         return max;
     }
 
+    /**
+     *
+     * @param L 每块木头长度的集合
+     * @param woodLength  mid 的长度
+     * @return 每块木头的长度
+     */
     public int getPieces(int[] L, int woodLength) {
         int pieces = 0;
         for (int wood : L) {
