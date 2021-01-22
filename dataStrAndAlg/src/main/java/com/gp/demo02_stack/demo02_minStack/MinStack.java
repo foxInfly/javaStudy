@@ -1,9 +1,9 @@
-package com.gp.linearList.stack.demo02_minStack;
+package com.gp.demo02_stack.demo02_minStack;
 
 import java.util.Stack;
 
 /**
- * min stack
+ * min demo02_stack
  * 设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。
  *
  * @author lp

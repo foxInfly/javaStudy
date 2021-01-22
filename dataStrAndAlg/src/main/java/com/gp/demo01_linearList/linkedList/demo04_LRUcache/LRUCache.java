@@ -1,4 +1,4 @@
-package com.gp.linearList.linkedList.demo04_LRUcache;
+package com.gp.demo01_linearList.linkedList.demo04_LRUcache;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.gp.linearList.stack.demo03_ByteDanceEx1;
+package com.gp.demo02_stack.demo03_ByteDanceEx1;
 
 import java.util.Stack;
 
@@ -32,7 +32,7 @@ public class ByteDanceEx1 {
         //numbers = {1, 2, 6, 1}
         //sum     = {0, 2, 8, 9}
 
-        //numbers[i] < numbers[stack.peek()这里设计的巧妙呀，针对这个需求，这里简化成这样，人才。
+        //numbers[i] < numbers[demo02_stack.peek()这里设计的巧妙呀，针对这个需求，这里简化成这样，人才。
         for (int i = 0; i < numbers.length; i++) {
             while (!stack.isEmpty() && numbers[i] < numbers[stack.peek()]) {
                 int index = stack.pop();

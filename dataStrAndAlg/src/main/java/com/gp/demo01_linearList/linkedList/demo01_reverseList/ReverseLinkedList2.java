@@ -1,4 +1,4 @@
-package com.gp.linearList.linkedList.demo01_reverseList;
+package com.gp.demo01_linearList.linkedList.demo01_reverseList;
 
 
 /**

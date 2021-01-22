@@ -122,7 +122,7 @@ class ArrayStack2{
     public void list(){
         if (isEmpty()) { System.out.println("栈空，没有数据~~");return;}
         for (int i = top; i >= 0 ; i--) {
-            System.out.println("stack["+i+"]="+stack[i]);
+            System.out.println("demo02_stack["+i+"]="+stack[i]);
         }
     }
 

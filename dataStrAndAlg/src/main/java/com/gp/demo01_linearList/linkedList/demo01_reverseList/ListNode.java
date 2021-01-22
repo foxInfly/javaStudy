@@ -1,14 +1,12 @@
-package com.gp.linearList.linkedList.demo03_addTwoNumbers;
+package com.gp.demo01_linearList.linkedList.demo01_reverseList;
 
 import lombok.Data;
-import lombok.experimental.Accessors;
 
 /**单向单链表
  * @author lp
  * @since 2021-01-19 23:22:04
  */
 @Data
-@Accessors(chain = true)
 public class ListNode {
     //属性
     int val;
