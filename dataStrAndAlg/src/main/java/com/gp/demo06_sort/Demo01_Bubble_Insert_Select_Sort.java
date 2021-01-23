@@ -5,8 +5,8 @@ public class Demo01_Bubble_Insert_Select_Sort {
 
 	public static void bubbleSort(int[] array) {
 		int length = array.length;
-		for (int i = 0; i < array.length; i++) {
-			for (int j = 1; j < length; j++) {
+		for (int i = 0; i < array.length -1 ; i++) {
+			for (int j = 1; j < length -i ; j++) {
 				if (array[j - 1] > array[j]) {
 					int temp = array[j - 1];
 					array[j - 1] = array[j];
@@ -64,36 +64,35 @@ public class Demo01_Bubble_Insert_Select_Sort {
         for (int j = 0; j < array.length; j++) {
             array[j] =(int)(Math.random() * 10000);
         }
+        int[] tmp = new int[array.length];
+        System.arraycopy(array, 0, tmp, 0, array.length);
+
         //1.bubble Sort
         long start1 = System.currentTimeMillis();
-        for (int k = 0; k < 10; k++) {
-            bubbleSort(array);
-        }
+            bubbleSort(tmp);
         long end1 = System.currentTimeMillis();
         System.out.println("Bubble Sort->" + (end1 - start1) + "ms\n");
+        System.arraycopy(array, 0, tmp, 0, array.length);
 
         //2.insert Sort
         long start2 = System.currentTimeMillis();
-        for (int k = 0; k < 10; k++) {
-            insertSort(array);
-        }
+            insertSort(tmp);
         long end2 = System.currentTimeMillis();
         System.out.println("Insert Sort->" + (end2 - start2) + "ms\n");
+        System.arraycopy(array, 0, tmp, 0, array.length);
 
         //3.select sort
         long start3 = System.currentTimeMillis();
-        for (int k = 0; k < 10; k++) {
-            selectSort(array);
-        }
+            selectSort(tmp);
         long end3 = System.currentTimeMillis();
         System.out.println("Select Sort->" + (end3 - start3) + "ms\n");
+        System.arraycopy(array, 0, tmp, 0, array.length);
 
         //3.select sort
         long start4 = System.currentTimeMillis();
-        for (int k = 0; k < 10; k++) {
-            selectSort2(array);
-        }
+            selectSort2(tmp);
         long end4 = System.currentTimeMillis();
         System.out.println("Select2 Sort->" + (end4 - start4) + "ms\n");
+        System.arraycopy(array, 0, tmp, 0, array.length);
     }
 }
