@@ -31,9 +31,10 @@ public class Demo01_PreOrder1 {
     public static void main(String[] args) {
         TreeNode treeNode1 = new TreeNode(1);
         TreeNode treeNode7 = new TreeNode(7);
+        TreeNode treeNode9 = new TreeNode(9);
         TreeNode treeNode12 = new TreeNode(12);
         TreeNode treeNode5 = new TreeNode(5, treeNode1, treeNode7);
-        TreeNode treeNode10 = new TreeNode(10, null, treeNode12);
+        TreeNode treeNode10 = new TreeNode(10, treeNode9, treeNode12);
         TreeNode treeNode8 = new TreeNode(8, treeNode5, treeNode10);
 
 
