@@ -37,6 +37,6 @@ public class Demo01_PreOrder1 {
         TreeNode treeNode8 = new TreeNode(8, treeNode5, treeNode10);
 
 
-        System.out.println(new Demo01_PreOrder1().preorderTraversal(treeNode8));
+        System.out.println(new Demo01_PreOrder2().preorderTraversal(treeNode8));
     }
 }
