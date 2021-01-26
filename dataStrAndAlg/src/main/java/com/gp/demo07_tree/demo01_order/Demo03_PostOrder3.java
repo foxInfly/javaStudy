@@ -1,4 +1,6 @@
-package com.gp.demo07_tree;
+package com.gp.demo07_tree.demo01_order;
+
+import com.gp.demo07_tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +10,7 @@ import java.util.Stack;
  * @author lp
  * @since 2021-01-25 10:24:54
  */
-public class Demo03_PostOrder2 {
+public class Demo03_PostOrder3 {
 
     /**
      * @param root: A Tree
@@ -22,7 +24,7 @@ public class Demo03_PostOrder2 {
         stack.push(root);
         while (!stack.isEmpty()) {
             TreeNode node = stack.peek();
-            if (node.right == null && node.left == null) {
+            if (node.left == null && node.left == null) {
                 result.add(stack.pop().val);
             }
             if (node.right != null) {
@@ -48,6 +50,6 @@ public class Demo03_PostOrder2 {
         TreeNode treeNode8 = new TreeNode(8, treeNode5, treeNode10);
 
 
-        System.out.println(new Demo03_PostOrder2().postorderTraversal(treeNode8));
+        System.out.println(new Demo03_PostOrder3().postorderTraversal(treeNode8));
     }
 }

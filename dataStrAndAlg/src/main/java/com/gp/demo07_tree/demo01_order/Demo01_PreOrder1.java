@@ -1,4 +1,6 @@
-package com.gp.demo07_tree;
+package com.gp.demo07_tree.demo01_order;
+
+import com.gp.demo07_tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

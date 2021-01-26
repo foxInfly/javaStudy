@@ -1,31 +1,41 @@
-package com.gp.demo07_tree;
+package com.gp.demo07_tree.demo01_order;
+
+import com.gp.demo07_tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
 /**
- * 后序遍历
- *
  * @author lp
  * @since 2021-01-25 10:24:54
  */
-public class Demo03_PostOrder1 {
+public class Demo03_PostOrder2 {
 
     /**
      * @param root: A Tree
-     * @return: Preorder in ArrayList which contains node values.
+     * @return: Postorder in ArrayList which contains node values.
      */
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root == null) return result;
 
-        List<Integer> left = postorderTraversal(root.left);
-        List<Integer> right = postorderTraversal(root.right);
-
-        result.addAll(left);
-        result.addAll(right);
-        result.add(root.val);
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode node = stack.peek();
+            if (node.right == null && node.left == null) {
+                result.add(stack.pop().val);
+            }
+            if (node.right != null) {
+                stack.push(node.right);
+                node.right = null;
+            }
+            if (node.left != null) {
+                stack.push(node.left);
+                node.left = null;
+            }
+        }
         return result;
     }
 
@@ -40,6 +50,6 @@ public class Demo03_PostOrder1 {
         TreeNode treeNode8 = new TreeNode(8, treeNode5, treeNode10);
 
 
-        System.out.println(new Demo03_PostOrder1().postorderTraversal(treeNode8));
+        System.out.println(new Demo03_PostOrder2().postorderTraversal(treeNode8));
     }
 }
