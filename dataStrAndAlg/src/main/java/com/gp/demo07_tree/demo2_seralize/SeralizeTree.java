@@ -14,7 +14,7 @@ import java.util.List;
 public class SeralizeTree {
 
     /**
-     * Encodes a tree to a single string.
+     * 1.Encodes a tree to a single string.
      *
      * @param root tree
      */
@@ -37,6 +37,7 @@ public class SeralizeTree {
             list.add(node.right);
         }
 
+        // 2.把最后一行未null的全部去掉
         // [1,2,3,null,null,4,5]
         while (list.get(list.size() - 1) == null) {
             list.remove(list.size() - 1);
@@ -44,26 +45,27 @@ public class SeralizeTree {
 
         StringBuilder sb = new StringBuilder("{");
         sb.append(list.get(0).val);
+        // 3.把list变成字符串
         // {1,2,3,#,#,4,5}
         for (int i = 1; i < list.size(); i++) {
             if (list.get(i) == null) {
                 sb.append(",#");
             } else {
-                sb.append("," + list.get(i).val);
+                sb.append(",").append(list.get(i).val);
             }
         }
         sb.append("}");
         return sb.toString();
     }
 
-    // Decodes your encoded data to tree.
+    // 2.Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        if (data == null || data.equals("{}")) {
-            return null;
-        }
-        // String[] data 1 2 3 # # 4 5
+        if (data == null || data.equals("{}"))  return null;
+
+        // 1.String[] data 1 2 3 # # 4 5
         String[] datas = data.substring(1, data.length() - 1).split(",");
         boolean isLeft = true;
+
         List<TreeNode> queue = new ArrayList<>();
         TreeNode node = new TreeNode(Integer.parseInt(datas[0]));
         queue.add(node);
@@ -79,9 +81,8 @@ public class SeralizeTree {
                 queue.add(node1);
             }
 
-            if (!isLeft) {
-                index++;
-            }
+            if (!isLeft) index++;
+
             isLeft = !isLeft;
         }
         return queue.get(0);
