@@ -9,7 +9,7 @@ import com.gp.demo07_tree.TreeNode;
  * @author lp
  * @since 2021/1/27 10:47
  **/
-public class BalanceTree {
+public class BalanceBinaryTree {
     public boolean isBalanced(TreeNode root) {
         if (root == null) return true;
 
