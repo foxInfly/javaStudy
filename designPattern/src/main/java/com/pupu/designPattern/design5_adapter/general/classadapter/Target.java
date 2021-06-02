@@ -1,7 +1,7 @@
 package com.pupu.designPattern.design5_adapter.general.classadapter;
 
 /**
- * Created by Tom.
+ * target类
  */
 public interface Target {
     int request();
