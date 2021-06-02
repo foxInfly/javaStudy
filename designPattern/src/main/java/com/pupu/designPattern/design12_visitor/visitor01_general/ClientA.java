@@ -11,6 +11,7 @@ public class ClientA implements IClient {
      */
     public void visit(HouseA houseA) {
         String result = houseA.operationA();
+
         System.out.println("参观房子： "  + result);
     }
 

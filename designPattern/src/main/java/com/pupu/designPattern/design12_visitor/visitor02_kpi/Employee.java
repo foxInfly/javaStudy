@@ -3,7 +3,10 @@ package com.pupu.designPattern.design12_visitor.visitor02_kpi;
 import java.util.Random;
 
 /**
- * Created by Tom.
+ * 雇员
+ *
+ * @author lp
+ * @since 2021/6/2 9:22
  */
 public abstract class Employee {
     public String name;
