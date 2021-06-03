@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 /**
  * 快速排序
- * <p>
  *
  *
  * @author : lipu
@@ -13,7 +12,8 @@ import java.util.Arrays;
 public class QuickSort {
     public static void main(String[] args) {
 //        int arr[] = {-9,7,0,3,-5,8};
-        int[] arr = GenericArrUtil.genericArr(80000);
+        int arr[] = {9,4,2,8};
+//        int[] arr = GenericArrUtil.genericArr(80000);
         System.out.println("排序前的结果为：" + Arrays.toString(arr));
 
         long start = System.currentTimeMillis();
