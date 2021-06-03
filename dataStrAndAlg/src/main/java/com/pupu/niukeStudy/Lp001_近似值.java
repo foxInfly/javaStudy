@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @author lp
  * @since 2021/6/3 16:05:54
  */
-public class Lp01_JinSiZhi {
+public class Lp001_近似值 {
     public static void main(String[] args) throws IOException {
         while (true){
             System.out.print("请输入您的浮点数：");
