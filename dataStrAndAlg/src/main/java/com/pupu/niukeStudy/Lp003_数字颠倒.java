@@ -3,7 +3,9 @@ package com.pupu.niukeStudy;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * 输入一个整数，将这个整数以字符串的形式逆序输出
@@ -16,6 +18,8 @@ public class Lp003_数字颠倒 {
 
     public static void main(String[] args) throws IOException {
         InputStream in = System.in;
+
+        List<String> list = new ArrayList<>();
         byte[] bytes = new byte[1024];
         int l;
         while ((l = in.read(bytes))>0){
