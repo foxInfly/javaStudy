@@ -24,7 +24,7 @@ import java.io.InputStreamReader;
  * @author lp
  * @since 2021/6/3 19:53:58
  */
-public class Lp004_汽水瓶 {
+public class Hw004_汽水瓶 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str = null;

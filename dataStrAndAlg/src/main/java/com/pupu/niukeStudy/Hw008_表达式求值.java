@@ -12,7 +12,7 @@ import java.io.*;
  * @author lp
  * @since 2021/6/7 9:38:16
  */
-public class Lp008_表达式求值 {
+public class Hw008_表达式求值 {
     public static void main(String[] args) throws Exception {
         InputStream in = System.in;
         System.out.println(new ExprDemo().expr(in));

@@ -18,7 +18,7 @@ import java.io.InputStreamReader;
  * @author lp
  * @since 2021/6/3 20:27:24
  */
-public class Lp005_统计每个月兔子的总数 {
+public class Hw005_统计每个月兔子的总数 {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line = "";

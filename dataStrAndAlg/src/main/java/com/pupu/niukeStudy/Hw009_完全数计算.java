@@ -21,7 +21,7 @@ import java.io.*;
  * @author lp
  * @since 2021/6/7 9:48:28
  */
-public class Lp009_完全数计算 {
+public class Hw009_完全数计算 {
 
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

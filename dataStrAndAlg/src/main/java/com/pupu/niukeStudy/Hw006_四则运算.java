@@ -13,7 +13,7 @@ import java.io.InputStream;
  * @author lp
  * @since 2021/6/3 20:58:51
  */
-public class Lp006_四则运算 {
+public class Hw006_四则运算 {
 
     public static void main(String[] args) throws IOException {
         InputStream in = System.in;

@@ -14,7 +14,7 @@ import java.util.List;
  * @author lp
  * @since 2021/6/3 17:46:01
  */
-public class Lp003_数字颠倒 {
+public class Hw003_数字颠倒 {
 
     public static void main(String[] args) throws IOException {
         InputStream in = System.in;

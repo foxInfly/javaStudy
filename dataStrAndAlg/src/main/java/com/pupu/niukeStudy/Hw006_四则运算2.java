@@ -19,7 +19,7 @@ import java.util.Stack;
  * @author lp
  * @since 2021/6/3 20:58:51
  */
-public class Lp006_四则运算2 {
+public class Hw006_四则运算2 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

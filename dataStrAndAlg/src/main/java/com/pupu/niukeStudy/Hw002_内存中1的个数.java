@@ -13,7 +13,7 @@ import java.util.Arrays;
  * @author lp
  * @since 2021/6/3 17:00:19
  */
-public class Lp002_内存中1的个数 {
+public class Hw002_内存中1的个数 {
     public static void main(String[] args) throws IOException {
         InputStream in = System.in;
         int l;

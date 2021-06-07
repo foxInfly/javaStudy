@@ -25,7 +25,7 @@ import java.io.*;
  * @author lp
  * @since 2021/6/6 17:05:09
  */
-public class Lp007_杨辉三角变形 {
+public class Hw007_杨辉三角变形 {
     //  iNOC产品部-杨辉三角的变形
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
