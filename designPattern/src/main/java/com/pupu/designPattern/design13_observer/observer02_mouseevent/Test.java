@@ -5,6 +5,7 @@ import com.pupu.designPattern.design13_observer.observer02_mouseevent.handler.Mo
 import com.pupu.designPattern.design13_observer.observer02_mouseevent.handler.MouseEventType;
 
 /**
+ * 场景：
  * Created by Tom.
  */
 public class Test {
@@ -15,8 +16,8 @@ public class Test {
         //2.创建被观察者
         Mouse mouse = new Mouse();
         //3.添加观察者
-        mouse.addLisenter(MouseEventType.ON_CLICK,lisenter);
-        mouse.addLisenter(MouseEventType.ON_MOVE,lisenter);
+        mouse.addLisenter(MouseEventType.ON_CLICK, lisenter);
+        mouse.addLisenter(MouseEventType.ON_MOVE, lisenter);
 
         mouse.click();
         mouse.move();

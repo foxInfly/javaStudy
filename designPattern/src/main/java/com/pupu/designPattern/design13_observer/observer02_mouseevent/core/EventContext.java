@@ -1,5 +1,7 @@
 package com.pupu.designPattern.design13_observer.observer02_mouseevent.core;
 
+import lombok.Data;
+
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
@@ -9,6 +11,7 @@ import java.util.Map;
  * Created by Tom.
  */
 public class EventContext {
+    //存放观察者（事件）的容器 key:属于观察者的某个事件的类型名，value：事件对象
     protected Map<String,Event> events = new HashMap<>();
 
     /**
@@ -22,15 +25,17 @@ public class EventContext {
     }
 
     /**
-     * 添加观察者
-     * @param eventType 事件类型
+     * 添加观察者的某个观察点（事件）
+     * @param eventType 事件类型属于对应的观察者的
      * @param target 观察者
      */
     public void addLisenter(String eventType, EventListener target){
         try {
-            this.addLisenter(eventType, target, target.getClass().getMethod("on" + toUpperFirstCase(eventType), Event.class));
+            String methodName = "on" + toUpperFirstCase(eventType);
+            Method method = target.getClass().getMethod(methodName, Event.class);
+            this.addLisenter(eventType, target,method );
         }catch (NoSuchMethodException e){
-            throw new RuntimeException("...");
+            throw new RuntimeException("addLisenter ...");
         }
     }
 
@@ -49,12 +54,13 @@ public class EventContext {
      * @param event 事件
      */
     private void trigger(Event event){
-        event.setSource(this);
+        event.setEventContext(this);
         event.setTime(System.currentTimeMillis());
 
+        //通过发射调用，触发观察者对应的事件
         try {
-            if (event.getCallback() != null) {
-                event.getCallback().invoke(event.getTarget(), event);
+            if (event.getMehod() != null) {
+                event.getMehod().invoke(event.getObserver(), event);
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -63,10 +69,11 @@ public class EventContext {
 
     /**
      * 触发事件
-     * @param trigger 事件
+     * @param eventName 事件名称
      */
-    protected void trigger(String trigger){
-        if(!this.events.containsKey(trigger)){return;}
-        trigger(this.events.get(trigger).setTrigger(trigger));
+    protected void trigger(String eventName){
+        if(!this.events.containsKey(eventName)){return;}
+        trigger(this.events.get(eventName).setEventName(eventName));
     }
+
 }

@@ -8,12 +8,12 @@ import com.pupu.designPattern.design13_observer.observer02_mouseevent.core.Event
  */
 public class Mouse extends EventContext {
     public void click(){
-        System.out.println("调用单击方法");
+        System.out.println("我是被观察者：准备触发click...");
         this.trigger(MouseEventType.ON_CLICK);
     }
 
     public void move(){
-        System.out.println("调用移动方法");
+        System.out.println("我是被观察者：准备触发move...");
         this.trigger(MouseEventType.ON_MOVE);
     }
 }

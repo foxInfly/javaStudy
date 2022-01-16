@@ -11,24 +11,24 @@ import java.lang.reflect.Method;
 @Data
 @Accessors(chain = true)
 public class Event {
-    //事件源，动作是由谁发出的
-    private Object source;
+    //1.事件源，动作是由谁发出的,记录事件的相关信息（发给谁，发的什么内容，谁发出的等等）
+    private EventContext eventContext;
 
-    //事件触发，要通知谁（观察者）
-    private EventListener target;
+    //2.观察者，事件触发后，要通知的对象（观察者）
+    private EventListener observer;
 
-    //观察者给的回应
-    private Method callback;
+    //3.观察者给要执行的动作
+    private Method method;
 
-    //事件的名称
-    private String trigger;
+    //4.事件的名称
+    private String eventName;
 
-    //事件的触发时间
+    //5.事件的触发时间
     private long time;
 
-    public Event(EventListener target, Method callback) {
-        this.target = target;
-        this.callback = callback;
+    public Event(EventListener observer, Method method) {
+        this.observer = observer;
+        this.method = method;
     }
 
     public Event setTime(long time) {
@@ -36,12 +36,22 @@ public class Event {
         return this;
     }
 
-    public Method getCallback() {
-        return callback;
+    public Method getMehod() {
+        return method;
     }
 
-    public EventListener getTarget() {
-        return target;
+    public EventListener getObserver() {
+        return observer;
     }
 
+    @Override
+    public String toString() {
+        return "Event{" +
+                "\neventContext=" + eventContext +
+                ",\nobserver=" + observer +
+                ",\nmethod=" + method +
+                ",\neventName='" + eventName + '\'' +
+                ", time=" + time +
+                '}';
+    }
 }
