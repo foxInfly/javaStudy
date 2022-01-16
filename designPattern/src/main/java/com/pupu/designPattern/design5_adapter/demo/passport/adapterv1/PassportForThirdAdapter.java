@@ -4,6 +4,7 @@ import com.pupu.designPattern.design5_adapter.demo.passport.PassportService;
 import com.pupu.designPattern.design5_adapter.demo.passport.ResultMsg;
 
 /**
+ * 相当于是拓展功能呀
  * Created by Tom.
  */
 public class PassportForThirdAdapter extends PassportService implements IPassportForThird {

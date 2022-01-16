@@ -9,6 +9,7 @@ public class Test {
         Target adapter = new Adapter(new Adaptee()) {
             @Override
             public int request1() {
+                //这不是做了装饰，再处理吗
                 return adaptee.specificRequest() / 10;
             }
         };
