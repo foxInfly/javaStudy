@@ -7,6 +7,7 @@ public class Test {
     public static void main(String[] args) {
         GPer gper = GPer.getInstance();
 
+        //注册观察者
         gper.addObserver(new Teacher("Tom"));
         gper.addObserver(new Teacher("Jerry"));
 
